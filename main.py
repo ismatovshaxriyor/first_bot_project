@@ -10,7 +10,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-ADMIN_ID = "ADMIN ID"
+ADMIN_ID = 2048383791
 
 """ ------------------------ START COMMAND ------------------------ """
 def start_handler(update, context):
@@ -25,7 +25,7 @@ def error_handler(update, context: CallbackContext):
     logging.error(f"Update '{update}' caused error '{context.error}'")
 
 def main():
-    updater = Updater(token="TOKEN", use_context=True, request_kwargs={'read_timeout': 10, 'connect_timeout': 10})
+    updater = Updater(token="8062600526:AAEis5onPOo9CV15H-2abjXGH1GDC_fYF44", use_context=True, request_kwargs={'read_timeout': 10, 'connect_timeout': 10})
     dispatcher = updater.dispatcher
 
     # =====> FOR USERS

@@ -3,7 +3,7 @@ from telegram.ext import ConversationHandler
 from control_db import set_movie_items, get_movie_code, update_item, delete_item, get_movies_info
 import re
 
-ADMIN_ID_list = [2048383791, 808511625]
+ADMIN_ID_list = ["ADMIN 1", "ADMIN2", ]
 
 ADD_MOVIE, ADD_GENRE, ADD_DURATION, ADD_COUNTRY, ADD_CODE, UPLOAD_MOVIE = range(6)
 UPDATE, CHECK_CODE, UPDATE_GENRE, UPDATE_DURATION, UPDATE_COUNTRY, UPDATE_MOVIE = range(6)
@@ -17,8 +17,6 @@ buttons = [
 def admin_menu(update, context):
     if update.message.from_user.id in ADMIN_ID_list:
         update.message.reply_text("Xush kelibsiz ADMIN", reply_markup=ReplyKeyboardMarkup(buttons, resize_keyboard=True))
-    else:
-        update.message.reply_text("Siz ADMIN emassiz!")
 
 
 """ ---------------------- KINO QO'SHISH ---------------------- """
