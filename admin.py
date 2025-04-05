@@ -1,6 +1,6 @@
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, KeyboardButton
 from telegram.ext import ConversationHandler
-from control_db import set_movie_items, get_movie_code, update_item, delete_item, get_movies_info
+from database import set_movie_items, get_movie_code, update_item, delete_item, get_movies_info
 import re
 
 ADMIN_ID_list = ["ADMIN 1", "ADMIN2", ]

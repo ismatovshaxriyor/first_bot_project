@@ -1,4 +1,4 @@
-from control_db import get_movie_items
+from database import get_movie_items
 
 def get_movie_handler(update, context):
     try:
